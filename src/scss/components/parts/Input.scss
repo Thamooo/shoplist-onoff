@@ -1,0 +1,27 @@
+@use "./../../var.scss" as var;
+
+.input {
+  box-sizing: border-box;
+  min-width: var.$column_min_width;
+  border: var.$input_border;
+  border-radius: var.$input_border_radius;
+  overflow: hidden;
+  transition: var.$input_focus_animation;
+  &:focus-within {
+    box-shadow: var.$input_focus_shadow;
+  }
+  input {
+    display: block;
+    background-color: var.$input_bg;
+    padding: var.$input_padding;
+    border: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    &:focus {
+      outline: 0;
+    }
+    &::placeholder {
+      color: #9298a2;
+    }
+  }
+}

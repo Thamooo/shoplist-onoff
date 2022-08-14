@@ -1,0 +1,28 @@
+@use "./var.scss" as var;
+@import url("https://use.typekit.net/oei2acl.css");
+
+* {
+  font-size: 16px;
+  font-family: var.$work_sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  color: #273348;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+}

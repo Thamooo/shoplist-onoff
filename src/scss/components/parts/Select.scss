@@ -1,0 +1,80 @@
+@use "./../../var.scss" as var;
+
+.select {
+  cursor: pointer;
+  position: relative;
+  min-width: var.$column_min_width;
+  &__control {
+    display: flex;
+    align-items: center;
+    padding: var.$input_padding;
+    background: var.$input_bg;
+    border: var.$input_border;
+    border-radius: var.$input_border_radius;
+    transition: box-shadow 0.3s ease;
+
+    &--is-focused {
+      box-shadow: var.$input_focus_shadow;
+    }
+
+    &--menu-is-open {
+      .select__indicators {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__value {
+    &-container {
+      position: relative;
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  &__single-value,
+  &__placeholder {
+    position: absolute;
+  }
+
+  &__indicators {
+    transition: all 0.3s ease;
+  }
+
+  &__indicator {
+    line-height: 0;
+  }
+
+  &__menu {
+    margin-top: 8px;
+    padding: var.$input_padding;
+    background: var.$input_bg;
+    border: var.$input_border;
+    border-radius: var.$input_border_radius;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__option {
+    cursor: pointer;
+    padding: 5px 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      display: block;
+      transition: all 0.8s ease;
+      width: 0%;
+      height: 4px;
+      background: var.$select_underline_color;
+      position: absolute;
+      bottom: 0;
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

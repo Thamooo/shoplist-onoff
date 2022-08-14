@@ -1,0 +1,43 @@
+// =========================================
+// COLUMNS
+// =========================================
+$column_min_width: 260px;
+
+// =========================================
+// FONTS
+// =========================================
+$work_sans: work-sans, sans-serif;
+
+// =========================================
+// BUTTONS
+// =========================================
+$button_transition: all 0.3s ease;
+$button_animation_transform: scale(1.1);
+
+// Add
+$button_add_bg: #2dd08c;
+$button_add_color: white;
+$button_add: #2dd08c;
+
+// Delete
+$button_delete_bg: transparent;
+$button_delete_color: #f54436;
+
+// =========================================
+// TABLE
+// =========================================
+$table_bg: #fff;
+$table_bg_odd: #fbfbfb;
+
+// =========================================
+// INPUTS
+// =========================================
+$input_border: 2px solid #ecedee;
+$input_border_radius: 10px;
+$input_bg: #fff;
+$input_padding: 14px 20px 15px 20px;
+$input_focus_shadow: 0px 0px 8px 0px #0000002b;
+$input_focus_animation: box-shadow 0.3s ease;
+
+//Select
+$select_underline_color: #2dd08c;

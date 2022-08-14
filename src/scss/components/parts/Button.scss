@@ -1,0 +1,27 @@
+@use "./../../var.scss" as var;
+
+.btn {
+  padding: 0;
+  font-size: 16px;
+  display: inline-block;
+  border: 0px;
+  transition: var.$button_transition;
+  cursor: pointer;
+
+  &:hover {
+    transform: var.$button_animation_transform;
+  }
+
+  &__add {
+    color: var.$button_add_color;
+    background: var.$button_add_bg;
+    padding: 13px 22px;
+    color: white;
+    border-radius: 40px;
+  }
+  &__delete {
+    color: var.$button_delete_color;
+    background: var.$button_delete_bg;
+    font-size: 16px;
+  }
+}
