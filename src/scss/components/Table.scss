@@ -20,6 +20,11 @@
       &:nth-child(2) {
         padding-left: 48px;
       }
+      &:nth-child(3) {
+        button {
+          margin-left: 40px;
+        }
+      }
     }
   }
 }
