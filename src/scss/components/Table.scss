@@ -13,6 +13,7 @@
 
     &__column {
       width: var.$column_min_width;
+      overflow: auto;
       &:nth-child(1) {
         padding-left: 60px;
       }
