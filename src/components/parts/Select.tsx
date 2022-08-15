@@ -17,10 +17,6 @@ export const Index: React.FC<SelectComponentProps> = ({
     }
   );
 
-  const handleSelect = (change: any) => {
-    console.log(change);
-  };
-
   return (
     <ReactSelect
       onChange={(change) => {

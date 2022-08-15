@@ -2,6 +2,22 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Docker launch
+
+In the project directory, you should run:
+
+### `docker build --tag react .`
+
+Creates docker build
+
+### `docker run --publish 3000:3000 react`
+
+Launches Docker at 3000 port
+
+Now you can access application:
+
+### `localhost:3000`
+
 ## Available Scripts
 
 In the project directory, you can run:

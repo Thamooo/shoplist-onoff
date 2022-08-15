@@ -5,7 +5,6 @@ import {
   ProductAction,
   ProductActionTypes,
 } from "../../types/products";
-import { Shop } from "../../types/shops";
 
 export const AddProduct = ({ shop, name }: AddProductActionInput) => {
   return (dispatch: Dispatch<ProductAction>) => {
